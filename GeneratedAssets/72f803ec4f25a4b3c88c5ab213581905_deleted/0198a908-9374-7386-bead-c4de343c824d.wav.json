@@ -1,0 +1,13 @@
+{
+    "asset": "72f803ec4f25a4b3c88c5ab213581905",
+    "fileName": "0198a908-9374-7386-bead-c4de343c824d.wav",
+    "prompt": "apple, chomping, single, crunch",
+    "negativePrompt": "",
+    "model": "0ee39b33-2893-4e0f-8c46-0e0bdd4eda85",
+    "modelName": "Text to Sound",
+    "customSeed": -1,
+    "w3CTraceId": "83c0c3d0934795d85ad4cf47dcbc9cfd",
+    "duration": 1.0,
+    "autoTrim": true,
+    "hasReference": false
+}

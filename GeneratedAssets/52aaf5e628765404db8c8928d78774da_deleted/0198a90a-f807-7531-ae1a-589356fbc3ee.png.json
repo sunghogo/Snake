@@ -1,0 +1,20 @@
+{
+    "asset": "52aaf5e628765404db8c8928d78774da",
+    "fileName": "0198a90a-f807-7531-ae1a-589356fbc3ee.png",
+    "prompt": "rouned, cute, straight, snake, green, head, top down, laying flat",
+    "negativePrompt": "blurry, portrait",
+    "model": "242b56c1-2224-41c4-8949-2ba760bbfc69",
+    "modelName": "16-bit Pixel",
+    "customSeed": -1,
+    "w3CTraceId": "4e8c1e171a9330e178f30d6c4ee61f80",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}
