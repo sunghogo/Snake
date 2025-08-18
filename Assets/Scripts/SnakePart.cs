@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class SnakePart : MonoBehaviour
 {
+    [Header("Properties")]
     [field: SerializeField] public Vector2 Direction { get; private set; } = Vector2.up;
     SpriteRenderer sr;
     float stepSize;
@@ -12,8 +13,17 @@ public class SnakePart : MonoBehaviour
         Direction = newDirection;
     }
 
+    public void Rotate()
+    {
+        if (Direction == Vector2.up) transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        else if (Direction == Vector2.left) transform.rotation = Quaternion.Euler(0f, 0f, 90f);
+        else if (Direction == Vector2.down) transform.rotation = Quaternion.Euler(0f, 0f, 180f);
+        else if (Direction == Vector2.right) transform.rotation = Quaternion.Euler(0f, 0f, 270f);
+    }
+
     public void Move()
     {
+        Rotate();
         transform.Translate(Direction * stepSize, 0f);
     }
 
@@ -37,12 +47,15 @@ public class SnakePart : MonoBehaviour
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        stepSize = sr.bounds.size.x;
-        GameManager.Instance.stepSize = stepSize;
         originalPosition = transform.position;
 
         GameManager.OnGameStart += Show;
         GameManager.OnGameOver += Hide;
+    }
+
+    void Start()
+    {
+        stepSize = GameManager.Instance.stepSize;
     }
 
     void OnDestroy()

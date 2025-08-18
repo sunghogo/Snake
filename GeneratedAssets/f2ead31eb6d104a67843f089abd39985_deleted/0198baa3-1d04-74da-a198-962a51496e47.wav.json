@@ -1,0 +1,13 @@
+{
+    "asset": "f2ead31eb6d104a67843f089abd39985",
+    "fileName": "0198baa3-1d04-74da-a198-962a51496e47.wav",
+    "prompt": "cute, chomp, cartoonish, single sound, soft",
+    "negativePrompt": "noise, reverb, loud, sharp",
+    "model": "0ee39b33-2893-4e0f-8c46-0e0bdd4eda85",
+    "modelName": "Text to Sound",
+    "customSeed": -1,
+    "w3CTraceId": "a65a0b3dcced6404b0aa8593f50ef2c2",
+    "duration": 1.0,
+    "autoTrim": true,
+    "hasReference": false
+}

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3111237500188839145}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,9 +27,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8545967348395817979}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.5, z: 1}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -8697133744877224016, guid: 21360de52a3304b71b58ac4a248252bd, type: 3}
   m_Color: {r: 0, g: 0.5754717, b: 0.06013641, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,6 +104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e329cf0acf4004d4691e7593bc246557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnakePart
+  up: {fileID: -8697133744877224016, guid: 21360de52a3304b71b58ac4a248252bd, type: 3}
+  turnLeft: {fileID: 8171884408360701465, guid: 7aacf57e53d61467b958ba02e2e6dd89, type: 3}
+  turnRight: {fileID: -5512783819148346509, guid: dfd6ce952fb444871be0921724a9906b, type: 3}
   <Direction>k__BackingField: {x: 0, y: 1}
 --- !u!61 &3111237500188839145
 BoxCollider2D:
@@ -143,11 +146,11 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.32, y: 0.4}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 0.4, y: 0.35}
   m_EdgeRadius: 0

@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     public float maxX;
     public float minY;
     public float maxY;
-    public float stepSize;
+    public float stepSize = 0.25f;
 
     [field: SerializeField] public int Score { get; private set; } = 0;
     [field: SerializeField] public int HighScore { get; private set; } = 0;

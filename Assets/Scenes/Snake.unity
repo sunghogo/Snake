@@ -450,17 +450,6 @@ Transform:
   - {fileID: 1380232282}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2084753572 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8209123946318711640, guid: 7fdbd50b97ea543cb8343e532e33bc66, type: 3}
-  m_PrefabInstance: {fileID: 6494785790976048985}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7bf6a0d444ae497294fd1097035a84d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2120806727
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,16 +548,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 2056009307}
     m_Modifications:
     - target: {fileID: 1000822988824874502, guid: 8825c6730621e4d509a8c6bd947755d0, type: 3}
-      propertyPath: snake
-      value: 
-      objectReference: {fileID: 2084753572}
-    - target: {fileID: 1000822988824874502, guid: 8825c6730621e4d509a8c6bd947755d0, type: 3}
       propertyPath: snakeSpawner
       value: 
       objectReference: {fileID: 1523227588}
     - target: {fileID: 4377271287594452174, guid: 8825c6730621e4d509a8c6bd947755d0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.25
+      value: 2.75
       objectReference: {fileID: 0}
     - target: {fileID: 4377271287594452174, guid: 8825c6730621e4d509a8c6bd947755d0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -623,6 +608,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 689493679913503333, guid: 0946f9ea6a7da43c7bfb012c67f696e9, type: 3}
+      propertyPath: stepSize
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2837954091352560714, guid: 0946f9ea6a7da43c7bfb012c67f696e9, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -683,6 +672,22 @@ PrefabInstance:
     - target: {fileID: 831834432083032523, guid: 7fdbd50b97ea543cb8343e532e33bc66, type: 3}
       propertyPath: m_Name
       value: SnakeSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061092448921206952, guid: 7fdbd50b97ea543cb8343e532e33bc66, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061092448921206952, guid: 7fdbd50b97ea543cb8343e532e33bc66, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061092448921206952, guid: 7fdbd50b97ea543cb8343e532e33bc66, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061092448921206952, guid: 7fdbd50b97ea543cb8343e532e33bc66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8556147928437123532, guid: 7fdbd50b97ea543cb8343e532e33bc66, type: 3}
       propertyPath: m_LocalPosition.x
