@@ -1,7 +1,5 @@
 using UnityEngine;
 using System;
-using Unity.VisualScripting;
-using NUnit.Framework;
 
 public enum GameState
 {
@@ -83,10 +81,10 @@ public class GameManager : MonoBehaviour
         if (spriteRenderer == null) return;
 
         Bounds bounds = spriteRenderer.bounds;
-        minX = bounds.min.x;
-        maxX = bounds.max.x;
-        minY = bounds.min.y;
-        maxY = bounds.max.y;
+        minX = (float)Math.Truncate(bounds.min.x);
+        maxX = (float)Math.Truncate(bounds.max.x);
+        minY = (float)Math.Truncate(bounds.min.y);
+        maxY = (float)Math.Truncate(bounds.max.y);
     }
 
     void Awake()

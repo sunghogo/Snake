@@ -11,6 +11,7 @@ public class Snake : MonoBehaviour
     [Header("Properties")]
     [SerializeField] float movesPerSecond = 5f;
     [field: SerializeField] public Vector2 Direction { get; private set; } =  Vector2.up;
+    [field: SerializeField] public Vector2 NextDirection { get; private set; } =  Vector2.up;
     float moveDuration;
     float time = 0f;
     bool isGrowing = false;
@@ -20,19 +21,19 @@ public class Snake : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow) && Direction != Vector2.down)
         {
-            Direction = Vector2.up;
+            NextDirection = Vector2.up;
         }
         else if (Input.GetKey(KeyCode.DownArrow) && Direction != Vector2.up)
         {
-            Direction = Vector2.down;
+            NextDirection = Vector2.down;
         }
         else if (Input.GetKey(KeyCode.LeftArrow) && Direction != Vector2.right)
         {
-            Direction = Vector2.left;
+            NextDirection = Vector2.left;
         }
         else if (Input.GetKey(KeyCode.RightArrow) && Direction != Vector2.left)
         {
-            Direction = Vector2.right;
+            NextDirection = Vector2.right;
         }
     }
 
@@ -113,6 +114,7 @@ public class Snake : MonoBehaviour
         ProcessInput();
         if (time >= moveDuration)
         {
+            Direction = NextDirection;
             MoveAllParts();
             time = 0;
         }

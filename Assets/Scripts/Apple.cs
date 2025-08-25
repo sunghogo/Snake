@@ -9,10 +9,10 @@ public class Apple : MonoBehaviour
     public void TeleportEmptySpace()
     {
         float step = GameManager.Instance.stepSize;
-        float minX = GameManager.Instance.minX + step;
-        float maxX = GameManager.Instance.maxX - step;
-        float minY = GameManager.Instance.minY + step;
-        float maxY = GameManager.Instance.maxY - step;
+        float minX = GameManager.Instance.minX;
+        float maxX = GameManager.Instance.maxX;
+        float minY = GameManager.Instance.minY;
+        float maxY = GameManager.Instance.maxY;
 
         // How many whole cells fit along each axis
         int cellsX = Mathf.FloorToInt((maxX - minX) / step);
